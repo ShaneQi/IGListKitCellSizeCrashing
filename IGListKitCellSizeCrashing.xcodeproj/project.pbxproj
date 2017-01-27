@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		478F4F29EA043CD21A70A20F /* Pods_IGListKitCellSizeCrashing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D1B07243AF8F28B229C2A8 /* Pods_IGListKitCellSizeCrashing.framework */; };
 		BFC9E8E41E3BB8760070490B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E8E31E3BB8760070490B /* AppDelegate.swift */; };
 		BFC9E8E61E3BB8760070490B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E8E51E3BB8760070490B /* ViewController.swift */; };
 		BFC9E8E91E3BB8760070490B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC9E8E71E3BB8760070490B /* Main.storyboard */; };
 		BFC9E8EB1E3BB8760070490B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC9E8EA1E3BB8760070490B /* Assets.xcassets */; };
 		BFC9E8EE1E3BB8760070490B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC9E8EC1E3BB8760070490B /* LaunchScreen.storyboard */; };
+		BFC9E8F61E3BC4610070490B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E8F51E3BC4610070490B /* Model.swift */; };
+		BFC9E8F81E3BC4880070490B /* SectionControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E8F71E3BC4880070490B /* SectionControllers.swift */; };
+		BFC9E8FA1E3BC4A40070490B /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E8F91E3BC4A40070490B /* Cells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79D1B07243AF8F28B229C2A8 /* Pods_IGListKitCellSizeCrashing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKitCellSizeCrashing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913A7ABF9A2E71697FE262CC /* Pods-IGListKitCellSizeCrashing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitCellSizeCrashing.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitCellSizeCrashing/Pods-IGListKitCellSizeCrashing.release.xcconfig"; sourceTree = "<group>"; };
 		BFC9E8E01E3BB8760070490B /* IGListKitCellSizeCrashing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListKitCellSizeCrashing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC9E8E31E3BB8760070490B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC9E8E51E3BB8760070490B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		BFC9E8EA1E3BB8760070490B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC9E8ED1E3BB8760070490B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFC9E8EF1E3BB8760070490B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC9E8F51E3BC4610070490B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BFC9E8F71E3BC4880070490B /* SectionControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionControllers.swift; sourceTree = "<group>"; };
+		BFC9E8F91E3BC4A40070490B /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		EBE5AC19EA134E40A9F29FC8 /* Pods-IGListKitCellSizeCrashing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitCellSizeCrashing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitCellSizeCrashing/Pods-IGListKitCellSizeCrashing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478F4F29EA043CD21A70A20F /* Pods_IGListKitCellSizeCrashing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0F81B87F9AD19761790F703 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79D1B07243AF8F28B229C2A8 /* Pods_IGListKitCellSizeCrashing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFC9E8D71E3BB8760070490B = {
 			isa = PBXGroup;
 			children = (
 				BFC9E8E21E3BB8760070490B /* IGListKitCellSizeCrashing */,
 				BFC9E8E11E3BB8760070490B /* Products */,
+				D86C7B50AD2BE1EC9B979EFA /* Pods */,
+				B0F81B87F9AD19761790F703 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,26 @@
 		BFC9E8E21E3BB8760070490B /* IGListKitCellSizeCrashing */ = {
 			isa = PBXGroup;
 			children = (
-				BFC9E8E31E3BB8760070490B /* AppDelegate.swift */,
 				BFC9E8E51E3BB8760070490B /* ViewController.swift */,
+				BFC9E8F51E3BC4610070490B /* Model.swift */,
+				BFC9E8F71E3BC4880070490B /* SectionControllers.swift */,
+				BFC9E8F91E3BC4A40070490B /* Cells.swift */,
 				BFC9E8E71E3BB8760070490B /* Main.storyboard */,
 				BFC9E8EA1E3BB8760070490B /* Assets.xcassets */,
 				BFC9E8EC1E3BB8760070490B /* LaunchScreen.storyboard */,
 				BFC9E8EF1E3BB8760070490B /* Info.plist */,
+				BFC9E8E31E3BB8760070490B /* AppDelegate.swift */,
 			);
 			path = IGListKitCellSizeCrashing;
+			sourceTree = "<group>";
+		};
+		D86C7B50AD2BE1EC9B979EFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5AC19EA134E40A9F29FC8 /* Pods-IGListKitCellSizeCrashing.debug.xcconfig */,
+				913A7ABF9A2E71697FE262CC /* Pods-IGListKitCellSizeCrashing.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFC9E8F21E3BB8760070490B /* Build configuration list for PBXNativeTarget "IGListKitCellSizeCrashing" */;
 			buildPhases = (
+				819C0B1FEA43CAD372D458D7 /* [CP] Check Pods Manifest.lock */,
 				BFC9E8DC1E3BB8760070490B /* Sources */,
 				BFC9E8DD1E3BB8760070490B /* Frameworks */,
 				BFC9E8DE1E3BB8760070490B /* Resources */,
+				E7DFAB16F8C270E19C18623F /* [CP] Embed Pods Frameworks */,
+				6CE1C0B86FB3EDA85CF7D2AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +168,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6CE1C0B86FB3EDA85CF7D2AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitCellSizeCrashing/Pods-IGListKitCellSizeCrashing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819C0B1FEA43CAD372D458D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7DFAB16F8C270E19C18623F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitCellSizeCrashing/Pods-IGListKitCellSizeCrashing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFC9E8DC1E3BB8760070490B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC9E8F61E3BC4610070490B /* Model.swift in Sources */,
 				BFC9E8E61E3BB8760070490B /* ViewController.swift in Sources */,
 				BFC9E8E41E3BB8760070490B /* AppDelegate.swift in Sources */,
+				BFC9E8F81E3BC4880070490B /* SectionControllers.swift in Sources */,
+				BFC9E8FA1E3BC4A40070490B /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +344,7 @@
 		};
 		BFC9E8F31E3BB8760070490B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE5AC19EA134E40A9F29FC8 /* Pods-IGListKitCellSizeCrashing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L2EY42T35G;
@@ -270,6 +358,7 @@
 		};
 		BFC9E8F41E3BB8760070490B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913A7ABF9A2E71697FE262CC /* Pods-IGListKitCellSizeCrashing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L2EY42T35G;
@@ -300,6 +389,7 @@
 				BFC9E8F41E3BB8760070490B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
