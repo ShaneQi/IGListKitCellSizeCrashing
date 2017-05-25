@@ -9,36 +9,36 @@
 import IGListKit
 
 
-class MessagesSectionController: IGListSectionController, IGListSectionType {
+class MessagesSectionController: ListSectionController {
 	
 	var user: User!
 	
-	public func numberOfItems() -> Int { return (user?.messages.count ?? 1)}
+	override public func numberOfItems() -> Int { return (user?.messages.count ?? 1)}
 	
-	public func sizeForItem(at index: Int) -> CGSize {
+	override public func sizeForItem(at index: Int) -> CGSize {
 		return CGSize(
 			width: collectionContext!.containerSize.width,
 			height: 50)
 	}
 	
-	public func cellForItem(at index: Int) -> UICollectionViewCell {
+	override public func cellForItem(at index: Int) -> UICollectionViewCell {
 		let cell = collectionContext?.dequeueReusableCellFromStoryboard(withIdentifier: "messageCell", for: self, at: index) as! MessageCell
 		cell.textLabel.text = user?.messages[index]
 		return cell
 	}
 	
-	public func didUpdate(to object: Any) { user = object as? User }
+	override public func didUpdate(to object: Any) { user = object as? User }
 	
-	public func didSelectItem(at index: Int) {}
+	override public func didSelectItem(at index: Int) {}
 }
 
-class PhotosSectionController: IGListSectionController, IGListSectionType {
+class PhotosSectionController: ListSectionController {
 	
 	var user: User!
 	
-	public func numberOfItems() -> Int { return user.photos.count }
+	override public func numberOfItems() -> Int { return user.photos.count }
 	
-	public func sizeForItem(at index: Int) -> CGSize {
+	override public func sizeForItem(at index: Int) -> CGSize {
 		/*
 		Cell sizes are from object.
 		Crashes because collection view asks
@@ -47,13 +47,13 @@ class PhotosSectionController: IGListSectionController, IGListSectionType {
 		return user.photos[index].size
 	}
 	
-	public func cellForItem(at index: Int) -> UICollectionViewCell {
+	override public func cellForItem(at index: Int) -> UICollectionViewCell {
 		let cell = collectionContext?.dequeueReusableCellFromStoryboard(withIdentifier: "photoCell", for: self, at: index) as! PhotoCell
 		cell.imageView.image = user.photos[index]
 		return cell
 	}
 	
-	public func didUpdate(to object: Any) { user = object as? User }
+	override public func didUpdate(to object: Any) { user = object as? User }
 	
-	public func didSelectItem(at index: Int) {}
+	override public func didSelectItem(at index: Int) {}
 }

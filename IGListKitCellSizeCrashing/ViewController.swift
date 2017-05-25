@@ -11,8 +11,8 @@ import IGListKit
 
 class ViewController: UIViewController {
 	
-	@IBOutlet var collectionView: IGListCollectionView!
-	var adapter: IGListAdapter!
+	@IBOutlet var collectionView: UICollectionView!
+	var adapter: ListAdapter!
 	
 	var user = User(messages: ["Hey man!", "What's up!", "Happy new year!", "On my way!"], photos: [#imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2"),#imageLiteral(resourceName: "3")])
 	var mode = Mode.photos
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 		layout.estimatedItemSize = CGSize(width: 100, height: 40)
 		collectionView.setCollectionViewLayout(layout, animated: false)
 		
-		adapter = IGListAdapter(updater: IGListAdapterUpdater(), viewController: self, workingRangeSize: 0)
+		adapter = ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
 		adapter.collectionView = collectionView
 		adapter.dataSource = self
 	}
@@ -42,13 +42,13 @@ class ViewController: UIViewController {
 	
 }
 
-extension ViewController: IGListAdapterDataSource {
+extension ViewController: ListAdapterDataSource {
 	
-	public func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
+	public func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
 		return [user]
 	}
 	
-	public func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
+	public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
 		switch mode {
 		case .messages:
 			return MessagesSectionController()
@@ -57,7 +57,7 @@ extension ViewController: IGListAdapterDataSource {
 		}
 	}
 	
-	public func emptyView(for listAdapter: IGListAdapter) -> UIView? { return nil }
+	public func emptyView(for listAdapter: ListAdapter) -> UIView? { return nil }
 	
 }
 

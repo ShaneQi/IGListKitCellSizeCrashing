@@ -26,14 +26,24 @@ IGLK_SUBCLASSING_RESTRICTED
  Create a new proxy object with targets and interceptor.
 
  @param collectionViewTarget A UICollectionViewDelegate conforming object that receives unintercepted messages.
- @param scrollViewTarget     A UIScrollViewDelegate conforming object that receives unintercepted messages.
- @param interceptor          An IGListAdapter object that intercepts a set of messages.
+ @param scrollViewTarget A UIScrollViewDelegate conforming object that receives unintercepted messages.
+ @param interceptor An IGListAdapter object that intercepts a set of messages.
 
  @return A new IGListAdapterProxy object.
  */
 - (instancetype)initWithCollectionViewTarget:(nullable id<UICollectionViewDelegate>)collectionViewTarget
                             scrollViewTarget:(nullable id<UIScrollViewDelegate>)scrollViewTarget
                                  interceptor:(IGListAdapter *)interceptor;
+
+/**
+ :nodoc:
+ */
+- (instancetype)init NS_UNAVAILABLE;
+
+/**
+ :nodoc:
+ */
++ (instancetype)new NS_UNAVAILABLE;
 
 @end
 

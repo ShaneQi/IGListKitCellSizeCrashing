@@ -8,7 +8,7 @@
 
 import IGListKit
 
-class User: IGListDiffable {
+class User: ListDiffable {
 	
 	var id: String = UUID().uuidString
 	var messages: [String]
@@ -23,7 +23,7 @@ class User: IGListDiffable {
 		return id as NSObjectProtocol
 	}
 	
-	func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
+	func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
 		guard let object = object as? User else { return false }
 		return id == object.id
 	}
